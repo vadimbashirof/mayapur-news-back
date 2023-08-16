@@ -1,0 +1,463 @@
+{
+	"info": {
+		"_postman_id": "6a387eb4-b1fb-4132-bc8e-1d926e67f2e5",
+		"name": "Mayapur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12916460"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Store Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "text test"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": "/home/vajasana/Pictures/Screenshots/Screenshot from 2023-08-03 17-50-28.png"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": "/home/vajasana/Downloads/ava9.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/posts",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "asdfasdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/posts/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Index Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "asdfasdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/posts",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "!!!!!!!!!!!!!"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": "/home/vajasana/Pictures/Screenshots/Screenshot from 2023-08-03 17-50-28.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/posts/9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"posts",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "!!!!!!!!!!!!!"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "images[]",
+									"type": "file",
+									"src": "/home/vajasana/Pictures/Screenshots/Screenshot from 2023-08-03 17-50-28.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/posts/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"posts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "App",
+			"item": [
+				{
+					"name": "Index Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "asdfasdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/posts?lang=ru",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Translates",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "asdfasdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/translates?lang=ru",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"translates"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Settings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{key}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "locale",
+									"value": "ru"
+								},
+								{
+									"key": "text",
+									"value": "asdfasdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/settings",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"key\", jsonData.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v1/admin/login?login=superadmin&password=secret",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"login"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "superadmin"
+						},
+						{
+							"key": "password",
+							"value": "secret"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

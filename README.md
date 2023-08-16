@@ -6,10 +6,10 @@ cp .env.example .env
 ```id -g```  
 
 Потом так  
-```docker-compose up```   
+```docker-compose -f docker-compose-dev.yml up```   
 
 Потом зайдете внутрь контейнера  
-```docker-compose exec php-fpm bash```  
+```docker-compose -f docker-compose-dev.yml exec php-fpm bash```  
 
 Внутри контейнера запустите  
 ```composer install```  
